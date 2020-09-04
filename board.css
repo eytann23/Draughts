@@ -1,0 +1,54 @@
+.black{
+  background: rgba(0,0,0,1);
+  grid-area: "b";
+}
+.green{
+  background: #0cb931;
+}
+
+.white{
+  background: white;
+  grid-area: "w";
+}
+
+.board{
+  display: grid;
+  border: rgb(44, 42, 35) groove 10px;
+  height: 500px;
+  width: 500px;
+  margin: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.piece{
+  height: 70%;
+  width: 70%;
+
+  margin-left:15%;
+  margin-top:15%;
+  
+}
+.box:not(:disabled):hover{
+  background-color: #0cb931;
+  cursor: pointer;
+}
+
+.green-border{
+  border: 3px groove #0ce041;
+  /*background-color: #ceba06;*/
+}
+.orange-border{
+  border: 3px groove #dd5100;
+  /*background-color: #ceba06;*/
+}
+
+.box:active{
+  border: 2px solid #ffffff;
+}
+
+
+#games-screen{
+  display: flex;
+  flex-wrap: wrap;
+}
